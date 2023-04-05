@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Pacifico&family=Secular+One&display=swap');
+
+@font-face {
+    font-family: "magnitude";
+    src: url('/assets/fonts/Magnitude-DEMO-BF6427357f34ea2.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "rockinsoda";
+    src: url('/assets/fonts/Rockinsoda.ttf') format("truetype");
+}
+
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +21,6 @@
 
 body {
     overflow-x: hidden;
-    background-color: #202731;
 }
 
 .container {
@@ -18,7 +30,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #DD3F31;
+    background: linear-gradient(to bottom, red, #DD3F31)
   }
 
 
@@ -31,20 +43,23 @@ body {
 }
 
 
+
 .boxScreen h1 {
     font-family: 'Secular One', sans-serif;
-    color: white;
-}
+    color: wheat;
+  }
+  
+
+
 
 .container-skills {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    min-height: 50vh;
+    min-height: 100vh;
     padding-top: 100px;
-    background-color: #202731;
+    background: linear-gradient(to bottom, #202731, #12161C);
 }
 
 
@@ -85,13 +100,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 4em;
+    font-size: 8em;
     line-height: 1.2;
-    font-family: 'Secular One', sans-serif;
+    font-family: "magnitude"
 }
 
 
-@media only screen and (max-width: 566px) {
+@media only screen and (max-width: 1446px) {
     #bracket1 {
         visibility: hidden;
     }
@@ -121,9 +136,8 @@ body {
 
 .sectionAnim {
     overflow: hidden;
-    gap: 37px;
     opacity: 0;
-    transition:0.5s ease-in;
+    transition: 0.5s ease-in;
     transform:translateX(-10rem)
 }
 
@@ -137,30 +151,33 @@ body {
 
 
 #skillsTxt {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%);
-    font-size: 3em;
-    font-family: 'Secular One', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-family: "rockinsoda";
+    color: #6E1869;
 }
 
 
 .aboutMeSkills {
-    text-align: center;
-    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: visible;
+    justify-content: center;
+    align-content: center;   
 }
 
 .aboutMeSkills img {
     transition: transform 0.5s ease;
-    position: relative;
     width: 100px;
-    height: auto;
+    height: 100px;
 
 }
 
 .aboutMeSkills img:hover {
-    transform: scale(1.1);
+    transform: rotate(360deg);
     
 }
 
@@ -194,7 +211,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #202731;
+    background: linear-gradient(to bottom, #12161C, black);
    
 }
 
@@ -210,28 +227,36 @@ body {
     background: linear-gradient(0deg, rgba(255,196,0,1) 0%, rgba(36,127,142,1) 73%); 
 }
 
-.container-contact img:nth-child(2) {
+.container-contact img:nth-child(1) {
     height: 350px;  
     border-radius: 20px;
 }
 
-.container-contact img:nth-child(3), .container-contact img:nth-child(4) {
-
-
+.container-contact img:nth-child(1), .container-contact img:nth-child(2) {
+    transition: transform 0.5s ease;
 }
 
+.container-contact img:nth-child(1):hover, .container-contact img:nth-child(2):hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
 .container-about h1:nth-child(1) {
-    color: aquamarine;
-    font-family: 'Secular One', sans-serif;
+    color: #9E0861;
+    font-family: "rockinsoda"
 }
 
 
 .container-about h1:nth-child(2) {
-    padding: 90px;
+    padding: 50px;
     bottom: 0;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Secular One', sans-serif;
     text-align: justify;
     font-size: 2em;
+    color: wheat;
 }
 
 .line {
@@ -273,7 +298,7 @@ body {
 }
 
 .wave .shape-fill {
-    fill: #202731;
+    fill: black;
 }
 
 
@@ -287,31 +312,55 @@ body {
 }
 
 .layer1 {
-    background-image: url('/imagens/layer1.svg');
+    background-image: url(/assets/imagens/layer1.svg);
 }
 
 .layer2 {
-    background-color: #202731;
+    background-color: black;
 }
 footer {
-    position: relative;
     background-color: #FEC300;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 100px;
     align-items: center;
 }
 
 footer h1:nth-child(1) {
-    font-size: 1.5em;
-    bottom: 0;
-    position: absolute;
+    white-space: nowrap;
+    font-size: 2em;
+    font-family: 'Secular One', sans-serif;
+    
 }
 
 footer h1:nth-child(2) {
+    font-family: 'Secular One', sans-serif;
+    font-size: 1em;
+}
 
-    font-size: 1;
-    top: 20%;
-    position: absolute;
 
+@media only screen and (max-width: 600px) {
+    footer h1:nth-child(1) {
+        font-size: 1.2em;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    footer h1:nth-child(1) {
+        font-size: 1.2em;
+    }
+    .container-contact img:nth-child(1) {
+        height: 250px;  
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 362px) {
+    footer h1:nth-child(1) {
+        font-size: 1em;
+    }
+    footer h1:nth-child(2) {
+        font-size: .8em;
+    }
 }
