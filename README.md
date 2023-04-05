@@ -14,7 +14,7 @@
   
  <h2>Descrição</h2>
   
-  Site criado com intuito de servir de cartão de visitas
+  Site criado com intuito de servir de cartão de visita.
   
   <h2> Créditos </h2>
 
