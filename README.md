@@ -10,3 +10,16 @@
 
 
 <img src="https://cdn.discordapp.com/attachments/857986664139063306/1093285534614429747/preview.png" /> 
+  
+  
+ <h2>Descrição</h2>
+  
+  Site criado com intuito de servir de cartão de visitas
+  
+  <h2> Créditos </h2>
+
+  <a href="https://github.com/SamuelGMonte">
+        <img src="https://cdn.discordapp.com/attachments/857986664139063306/1093286537959051294/eu.jpg" width="100px;" alt="Samuel Monte"/><br>
+        <sub>
+          <b>Samuel Monte</b>
+        </sub>
