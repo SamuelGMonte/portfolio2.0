@@ -258,7 +258,7 @@ body {
 .container-about h1:nth-child(2) {
     padding: 10px;
     font-family: 'Secular One', sans-serif;
-    text-align: justify;
+    text-align: center;
     font-size: 2em;
     color: wheat;
 }
